@@ -1,17 +1,20 @@
 <script setup lang="ts">
 import { RouterLink } from "vue-router";
+import { Icon } from "@iconify/vue/dist/iconify.js";
 </script>
 
 <template>
   <header>
     <nav class="container">
       <div class="branding">
-        <img src="../assets/Vue_Logo_Black.png" alt="" />
-        <h1>Vue Todos</h1>
+        <!-- <img src="../assets/Vue_Logo_Black.png" alt="" /> -->
+        <Icon icon="vscode-icons:file-type-todo" width="50" />
+        <!-- <Icon icon="vscode-icons:file-type-todo" /> -->
+        <h1>Todos</h1>
       </div>
       <ul class="nav-routes">
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <!-- <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/about">About</RouterLink> -->
       </ul>
     </nav>
   </header>
@@ -35,6 +38,7 @@ header {
 
       h1 {
         font-size: 24px;
+        align-items: center;
       }
     }
 
